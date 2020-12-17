@@ -1,0 +1,99 @@
+---
+layout: post
+title: "RxSwift 0.들어가기 전에"
+author: "Daun Joung"
+tags: ["RxSwift","iOS"]
+---
+# 0.0 들어가기 전에
+
+ReactiveX를 이해하기 위해서는 먼저 `프로그래밍 패러다임 (Programming Paradigm)`에 대해 이해햐여야 합니다.
+
+# 0.1 프로그래밍 패러다임 (Programming Paradigm)
+
+## 0.1.1 프로그래밍 패러다임의 개념
+
+프로그래밍 패러다임의 정의를 찾아보면 아래와 같습니다.
+
+> Programming paradigms are a way to classify programming languages based on their features. Languages can be classified into multiple paradigms.
+>
+> 프로그래밍 패러다임이란 각 언어가 가지는 특징에 맞게 프로그래밍 언어를 분류하는 일종의 방법론이다. 언어는 여러개의 패러다임으로 분류 될 수 있다.
+> 
+> 출처 : [위키피디아](https://en.wikipedia.org/wiki/Programming_paradigm)
+
+`프로그래밍 패러다임`이란 일종의 이론적인 방법론이며, 객체 지향 프로그래밍 (Objective Oriented Programming), 함수형 프로그래밍 (Functional Programming) 과 같은 것들이 모두 프로그래밍 패러다임 중 하나입니다.
+
+과거, 1개의 언어는 1개의 특징적인 패러다임을 기반으로 설계된 것과 달리 최근에 만들어진 프로그래밍 언어는 다양한 패러다임(Multi-paradigm) 개념을 기반으로 프로그래밍 될 수 있도록 설계되고 있습니다. Swift도 프로토콜 지향(protocol-oriented), 객체 지향 (object-oriented), 함수형 (functional), 명령형 (imperative), 선언형 (declarative) 패러다임의 개념을 포함하는 Muti-Paradigm 언어입니다.
+
+
+## 0.1.2. 프로그래밍 패러다임의 종류
+
+프로그래밍 패러다임은 크게 `명령형(imperative)` 와 `선언형(declarative)`으로 분류되며, 절차 지향 (procedural), 객체 지향 (object-oriented), 함수형(functional), 논리(logic) 등의 패러다임들도 세분화 됩니다.
+
+
+### 0.1.2.1. 명령형(imperative) 프로그래밍
+* 명령형 프로그래밍이란 상태를 변경하는 구문의 관점에서 연산을 작성하는 패러다임입니다.
+* 어떻게 (How) 동작할지를 작성하며, 알고리즘 등을 활용하여 구체적인 문제 해결 방법을 프로그래밍합니다.
+* 절차 지향 프로그래밍, 객체 지향 프로그래밍 등이 명령형 프로그래밍에 속합니다.
+#### 절차 지향 (procedural) 프로그래밍
+* 어떠한 문제를 해결하기 위한 계산 과정(명령어)을 순차적으로 작성하는 패러다임입니다.
+* 명령형 프로그래밍과 동의어로 쓰이는 경우가 있습니다.
+* ex) C
+
+#### 객체 지향 (object-oriented) 프로그래밍
+* 프로그램을 명령어의 흐름이 아닌 '객체'라는 기본 단위로 나누고, 객체들의 상호작용을 서술하는 프로그래밍 패러다임입니다.
+* ex) C++, JAVA
+
+### 0.1.2.2. 선언형(declarative) 프로그래밍
+* 선언형 프로그래밍은 해결방법이 아닌 수행하고자 아는 동작을 작성하는 패러다임입니다.
+* 무엇 (What)을 할지에 대해 작성합니다.
+* 함수형 프로그래밍, 논리형 프로그래밍 등이 선언형 프로그래밍에 속합니다.
+* 선언형 쿼리 언어(Declarative Query Language)인 SQL, HTML도 선언형 프로그래밍 패러다임을 기반으로 합니다.
+#### 함수형 (functional) 프로그래밍
+* 함수형 프로그래밍이란 순수함수로 구성하여 프로그래밍을 하는 패러다임입니다.
+* 순수함수란 동일한 인자값을 넣는다면 항상 동일한 리턴 값을 반환하며, 외부의 상태나 데이터 등에 영향을 받지 않는 함수를 의미합니다.
+* ex) LISP
+  * 컴퓨터 프로그램을 활용하여 수학 표기법을 나타내기 위한 목적으로 만들어진 언어입니다.
+  * 함수 f가 a,b,c라는 세개의 피연산자를 가진 함수 호출은 (f a b c)로 표현하는 문법 형식을 가지고 있습니다.
+    * (+ 1 2) -> 결과 : 3 
+    * (+ 3 4) -> 결과 : 7
+#### 논리형 (logic) 프로그래밍
+* 논리 문장을 이용하여 프로그램을 표현하고 계산을 수행하는 패러다임입니다.
+* ex) prolog
+  * prolog는 프랑스 마르세이유 대학 인공지능연구실에서 개발된 언어로, 인공지능이나 계산 언어학 혹은 자연어 처리에 많이 사용됩니다.
+  * prolog 프로그래밍은 사실들과 규칙들로 이루어져 있고, 이것을 이용하여 대답을 도출해냅니다.
+    * 규칙) A가 B를 좋아한다는 것은 like(A,B) 로 표현한다
+    * 사실 1) like(Jonh, Mary)
+    * 사실 2) like(Mary, Bill)
+    * 질문 ) ?-like(Bill, Mary)
+      * 결과 ) NO (거짓)
+    * 질문 ) ?-like(Jonh, Mary)
+      * 결과 ) YES (참)
+
+
+### 0.1.2.3 명령형 프로그래밍 vs 선언형 프로그래밍
+> You know imperative programming is like HOW you do something, and declarative programming is more like WHAT you do, or something.
+> 
+> 명령형 프로그래밍은 "어떻게" 할지를 프로그래밍하고, 선언형 프로그래밍은 "무엇"을 할지를 프로그래밍한다.
+> 
+> 출처 : [Imperative vs Declarative Programming](https://ui.dev/imperative-vs-declarative-programming/)
+
+* 집으로 가는 방법을 프로그래밍을 한다고 하면 아래와 같은 차이가 나타납니다.
+* 명령형 프로그래밍
+    * 지하철 1호선을 타고 A역으로 간다.. A역에서 내려서 1번 출구로 간다. 출구에서 200m 직진 후 우회전 하여 골목으로 들어간다. 골목에서 우측에 3번째 건물로 들어가서 3층 30x호로 간다.
+  * 선언형 프로그래밍
+    * 집 주소는 서울특별시 영등포구 X동 000-0번지, 30x호이다.
+
+* 명령형 프로그래밍은 알고리즘 등을 활용하여 원하는 동작을 수행하기 위한 절차를 수행한다면, 선언형 프로그래밍은 최종적으로 원하는 목표를 명시합니다.
+
+
+  
+# 0.99. 자료 출처
+* [위키피디아-Programming paradigm](https://en.wikipedia.org/wiki/Programming_paradigm)
+* [위키피디아-swift](https://en.wikipedia.org/wiki/Swift_(programming_language)
+* [위키피디아-절차적 프로그래밍](https://ko.wikipedia.org/wiki/절차적_프로그래밍)
+* [나무위키 - 객체 지향 프로그래밍](https://namu.wiki/w/객체%20지향%20프로그래밍)
+* [위키백과-논리형 프로그래밍](https://ko.wikipedia.org/wiki/논리형_프로그래밍)
+* [다양한 프로그래밍 패러다임 - 명령형, 절차지향, 선언형, 함수형, 논리형, 객체지향](http://blog.naver.com/PostView.nhn?blogId=qbxlvnf11&logNo=221370521237)
+* [명령형 프로그래밍 VS 선언형 프로그래밍](https://ui.dev/imperative-vs-declarative-programming/)
+* [인공지능언어 PROLOG](http://www.aistudy.co.kr/program/prolog/prolog_lee.htm)
+* [위키백과-리스프](https://ko.wikipedia.org/wiki/리스프)
