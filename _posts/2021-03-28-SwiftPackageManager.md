@@ -29,14 +29,14 @@ ex) Alamofire의 경우 github 주소인 https://github.com/Alamofire/Alamofire
 2. Xcode 메뉴에서 File -> Swift Packages -> Ad Package Dependency...  메뉴 선택
 <img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/202010328_SPM_1.png?raw=true" width="100%">
 3-1. 가져올 라이브러리의 저장소 URL을 입력 후 Next
-<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/202010328_SPM_2png?raw=true" width="100%">
+<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/202010328_SPM_2.png?raw=true" width="100%">
 3-2. 적용할 외부 라이브러리의 버전, 브랜치 명 혹은 커밋 해쉬값을 입력 후 Next
-<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/202010328_SPM_3png?raw=true" width="100%">
+<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/202010328_SPM_3.png?raw=true" width="100%">
 3-3. 실제 프로젝트에서 필요한 라이브러리만 선택 한 뒤 Next
-<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/202010328_SPM_4png?raw=true" width="100%">
+<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/202010328_SPM_4.png?raw=true" width="100%">
 
 혹시 추가한 라이브러리들을 제거 하거나 버전 편집이 필요하면 Project 타겟 선택 후 info 의 Package 항목에서 편집 및 삭제가 가능하다.
-<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/202010328_SPM_5png?raw=true" width="100%">
+<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/202010328_SPM_5.png?raw=true" width="100%">
 
 ## SPM 사용 후기
 SPM 을 활용하는 것은 걱정 이상으로 너무 쉽고 간편했다. 평소 프로그램 설치시마다 남들은 겪지 않는 온갖 문제를 겪어 오는지라 무언가 설치 하는 것에 두려움이 있는데, 항상 사용하던 XCode 내에서 쉽고 편하게 할 수 있으니... 앞으로 다시는 CocoaPods으로 되돌아가지 않을것 같다는..
