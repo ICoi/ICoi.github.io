@@ -69,23 +69,29 @@ SOLID 원칙
 * 하나의 모듈은 오직 하나의 사용자 또는 이해 관계자에 대해서만 책임져야 한다.</br>
    1액터 → 1 모듈
 
-(그리이이이이이이이이이임 넣어야되에요오오오옹오)
+<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/20210926_1-1.png?raw=true" width="100%">
+
 
 ## 8장. OCP: 개방-폐쇄 원칙
 * 소프트웨어 개체의 행위는 확장 할 수 있어야 하지만, 이때 개체를 변경해서는 안된다.
 * 기능이 어떻게(how), 왜(why), 언제(when) 발생했는지에 따라 기능을 분리하고, 분리한 기능을 컴포넌트의 계층구조로 조직화. </br>
 ⭐︎ 모든 컴포넌트는 단방향
 
-(그리이이이이이이이이이임 넣어야되에요오오오옹오)
+<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/20210926_1-2.png?raw=true" width="100%">
+
 
 ## 9장. LSP: 리스코프 치환 원칙
 * 하위 타입이 변경되더라도 상위 코드에 영향✖︎
 
-(그리이이이이이이이이이임 넣어야되에요오오오옹오)
+
+<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/20210926_2-1.png?raw=true" width="100%">
+
 
 ## 10장. ISP: 인터페이스 분리 원칙
 
-(그리이이이이이이이이이임 넣어야되에요오오오옹오)
+
+<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/20210926_2-2.png?raw=true" width="100%">
+
 ## 11장. DIP: 의존성 역전 원칙
 추상 인터페이스에 변경이 생기면 이를 구체화한 구현체들도 따라서 수정해야 한다.
 반대로 구체적인 구현체에 변경이 생기더라도 그 구현체가 구현하는 인터페이스는 항상, 좀 더 정확히 말하면 대다수의 경우 변경될 필요가 없다.
@@ -93,7 +99,9 @@ SOLID 원칙
 
 의존성 관리를 위해 추상 팩토리(Abstract Factory) 패턴 사용
 
-(그리이이이이이이이이이임 넣어야되에요오오오옹오)
+
+<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/20210926_2-3.png?raw=true" width="100%">
+
 
 
 # 4부. 컴포넌트 원칙
@@ -120,7 +128,8 @@ SOLID 원칙
    * 즉, 프로젝트의 컴포넌트 구조는 시간과 성숙도에 따라 변함
 
 
-(그리이이이이이이이이이임 넣어야되에요오오오옹오)
+<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/20210926_3-1.png?raw=true" width="100%">
+
 
 
 ## 14장. 컴포넌트 결합 
@@ -160,7 +169,7 @@ SOLID 원칙
  </pre>
 
 
-(그리이이이이이이이이이임 넣어야되에요오오오옹오)
+<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/20210926_3-2.png?raw=true" width="100%">
 
   * D거리 측정
   <pre>
@@ -193,7 +202,8 @@ SOLID 원칙
   * 시스템은 수평적 계층으로 분할 + 유즈케이스는 수직으로 분할. 단, 유즈케이스들이 각 계층에서 서로 겹치지 않아야 한다.
 
 
-(그리이이이이이이이이이임 넣어야되에요오오오옹오)
+<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/20210926_3-3.png?raw=true" width="100%">
+
 
 ## 17장. 경계: 선긋기
 * 경계는 소프트웨어 요소를 서로 분리하고, 경계 한편에 있는 요소가 반대편에 있는 요소를 알지 못하게 함
@@ -242,11 +252,7 @@ SOLID 원칙
   * 데이터베이스 독립성
   * 모든 외부 에이전시에 대한 독립성
 
-
-
-(그리이이이이이이이이이임 넣어야되에요오오오옹오)
-
-(그리이이이이이이이이이임 넣어야되에요오오오옹오)  
+<img src="https://github.com/ICoi/ICoi.github.io/blob/master/images/20210926_3-4.png?raw=true" width="100%">
 
 ## 23장. 프레젠터와 험블 객체
 * 행위 → 본질과 테스트하기 어려운 행위(험블객체)로 나눔
@@ -278,9 +284,3 @@ SOLID 원칙
 
 ## 29장. 클린 임베디드 아키텍처
 * (생략..)
-
-
-↑↓←→⇢⇢⇡⇣⇠✖︎✗✘✔︎✓➢▹▻➤⇧⍒⍋©⤷⭐︎ Control + Command + Spacebar
-➢
-https://unicode-table.com/kr/2937/
-
