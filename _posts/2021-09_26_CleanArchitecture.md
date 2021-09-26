@@ -5,7 +5,7 @@ author: "Daun Joung"
 tags: ["CleanArchitecture","BookReview"]
 ---
 # 책 리뷰 - Clean Architecture
-* 이 글은 Clearn ARchitecture 책의 내용 일부를 발최하여 작성하였습니다. 자세한 설명 및 내용은 도서를 참고하시면 됩니다.
+* 이 글은 Clean Architecture 책의 내용 일부를 발췌하여 작성하였습니다. 자세한 설명 및 내용은 도서를 참고하시면 됩니다.
 
 
 # 1부. 소개
