@@ -1,0 +1,18 @@
+current directory: /Users/daunjoung/Documents/Repository/ICoi.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/daunjoung/.rubies/ruby-3.4.1/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/daunjoung/Documents/Repository/ICoi.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250127-80985-fdewfe sitelibdir\=./.gem.20250127-80985-fdewfe clean
+
+current directory: /Users/daunjoung/Documents/Repository/ICoi.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250127-80985-fdewfe sitelibdir\=./.gem.20250127-80985-fdewfe
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/daunjoung/Documents/Repository/ICoi.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250127-80985-fdewfe sitelibdir\=./.gem.20250127-80985-fdewfe install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20250127-80985-fdewfe/racc
+
+current directory: /Users/daunjoung/Documents/Repository/ICoi.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250127-80985-fdewfe sitelibdir\=./.gem.20250127-80985-fdewfe clean
