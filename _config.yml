@@ -1,16 +1,16 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
+title:            Uni Blog
+longtitle:        Uni Dev Blog
+author:           Uni
+email:            ico1022@gmail.com
 description: >
-  Build Jekyll site with the GitBook style.
+  iOS Application Developer.
 
 version:          1.0
 gitbook_version:  3.2.3
 
-url:              'https://sighingnow.github.io'
-baseurl:          '/jekyll-gitbook'
+url:              'https://icoi.github.io/'
+baseurl:          '/uni'
 rss:              RSS
 
 # bootstrap: use the remote theme for the site itself

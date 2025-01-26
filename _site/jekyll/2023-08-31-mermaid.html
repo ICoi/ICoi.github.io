@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <title>
+    
+      Diagrams with mermaid.js &middot; Jekyll Gitbook
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/jekyll-gitbook/assets/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/jekyll-gitbook/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/jekyll-gitbook/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/jekyll-gitbook/assets/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/jekyll-gitbook/feed.xml" title="Jekyll Gitbook" />
+</head>
+
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/jekyll-gitbook/">
+          <h2 class="nav-title">Jekyll Gitbook</h2>
+        </a>
+        <ul class="nav-social-icons">
+          
+          
+          
+          
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="post">
+
+  <div class="post-info">
+    
+      <time datetime="2023-08-31 00:00:00 +0900">August 31, 2023</time>
+    
+  </div>
+  <h1 class="post-title">
+    <div>Diagrams with mermaid.js</div>
+  </h1>
+
+  <p>This jekyll-theme supports <a href="https://mermaid.js.org/">mermaid.js</a> to render diagrams
+in markdown.</p>
+
+<p>To enable the mermaid support, you need to set <code class="language-plaintext highlighter-rouge">mermaid: true</code> in the front matter
+of your post.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Diagrams with mermaid.js</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2023-08-31</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">mermaid</span><span class="pi">:</span> <span class="kc">true</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>Then you can use mermaid syntax in your markdown:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+</code></pre>
+
+<p>Or, even some complex examples:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail!
+    John--&gt;&gt;Alice: Great!
+    John-&gt;&gt;Bob: How about you?
+    Bob--&gt;&gt;John: Jolly good!
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail!
+    John--&gt;&gt;Alice: Great!
+    John-&gt;&gt;Bob: How about you?
+    Bob--&gt;&gt;John: Jolly good!
+</code></pre>
+
+<p>Refer to the <a href="https://mermaid.js.org/intro/">mermaid.js website</a> for more examples.</p>
+
+
+</div>
+
+<div class="relatedPosts">
+
+  
+
+</div>
+
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2025-01-27 00:36:57 +0900">2025</time> . Powered by Jekyll and <a href="#">Rain</a> theme.
+      </span>
+    </footer>
+  </body>
+</html>
